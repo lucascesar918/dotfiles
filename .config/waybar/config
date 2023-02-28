@@ -1,0 +1,115 @@
+{
+        "gtk-layer-shell": false,
+	"layer": "top",
+	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
+	"modules-center": ["wlr/workspaces"],
+	"modules-right": ["backlight","pulseaudio", "network", "clock", "battery","custom/power"],
+	
+	"pulseaudio": {
+               "tooltip": false,
+               "scroll-step": 5,
+               "format": " {icon} {volume}%",
+               "format-muted": " 婢 {volume}%",
+               "format-icons": {
+                "default": ["奄", "奔", "墳"]
+              },
+              "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	},
+        "river/tags": {
+                    "num-tags": 6,
+                    "disable-click": true,
+        },
+        "wlr/workspaces": {
+          "sort-by-name": true,
+          /* "on-click": "activate", */
+        },
+
+	"network": {
+		"tooltip": false,
+                "format": "{icon}",
+                "format-alt": "{ipaddr} {icon}",
+                "format-alt-click": "click-right",
+                "format-icons": {
+                  "wifi": [""],
+                  "ethernet": [""],
+                  "disconnected": ["睊"],
+                },
+                "on-click": "xfce4-terminal -e nmtui",
+	},
+	"backlight": {
+        "interval": 2,
+        "align": 0,
+        "rotate": 0,
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", ""],
+        "on-click": "",
+        "on-scroll-up": "brightnessctl -c backlight set 1%-",
+        "on-scroll-down": "brightnessctl -c backlight set +1%",
+        "smooth-scrolling-threshold": 1,
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{: %H:%M }",
+		"format-alt": "{: %H:%M %S   %d/%m/%Y}"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "exec wofi -c ~/.config/wofi/config -I",
+        "on-click-right": "killall wofi"
+    },
+    "custom/power":{
+        "format": "⏻",
+        /* "on-click": "bash ~/.config/rofi/leave/leave.sh", */
+        /* "on-click":"rofi-powermenu" */
+        "on-click": "wlogout -p layer-shell"
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "kitty -e yay -Syu && notify-send 'The system has been updated' "
+    },
+    /*"custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    }*/
+}
