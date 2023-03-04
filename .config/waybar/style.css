@@ -88,7 +88,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-        background-color: #bbccdd;
+        background-color: #c8c8c8;
         color: #000000;
 }
 

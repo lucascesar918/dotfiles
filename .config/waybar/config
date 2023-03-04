@@ -2,7 +2,8 @@
         "gtk-layer-shell": false,
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
-	"modules-center": ["wlr/workspaces"],
+	//"modules-center": ["wlr/workspaces"],
+	"modules-center": ["sway/workspaces"],
 	"modules-right": ["backlight","pulseaudio", "network", "clock", "battery","custom/power"],
 	
 	"pulseaudio": {
@@ -19,10 +20,25 @@
                     "num-tags": 6,
                     "disable-click": true,
         },
-        "wlr/workspaces": {
-          "sort-by-name": true,
-          /* "on-click": "activate", */
-        },
+        //"wlr/workspaces": {
+        //  "sort-by-name": true,
+        //  /* "on-click": "activate", */
+        //},
+
+		"sway/workspaces": {
+			"disable-scroll": true,
+			"disable-markup" : false,
+			"all-outputs": true,
+			"format": "  {icon}  ",
+			//"format":"{icon}",
+			"format-icons": {
+				"1": "",
+				"2": "",
+				"3": "",
+				"4": "",
+			}
+		},
+
 
 	"network": {
 		"tooltip": false,
