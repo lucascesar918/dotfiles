@@ -1,0 +1,24 @@
+# indicator
+# no-unlock-indicator
+# daemonize
+indicator-caps-lock
+# datestr=%A
+image=$HOME/.config/sway/swaylock.png
+scaling=fill
+font=UbuntuMono
+font-size=20
+
+# Ring
+indicator-radius=115
+# line-uses-ring
+line-color=#3b3b3b
+text-color=#e9e9e9
+inside-color=#40404098
+inside-ver-color=#acacac
+line-ver-color=#acacac
+ring-ver-color=#acacac98
+ring-color=#6a6a6a
+key-hl-color=#acacac
+separator-color=#6a6a6a
+layout-text-color=#f4f4f4
+line-wrong-color=#ff5656
