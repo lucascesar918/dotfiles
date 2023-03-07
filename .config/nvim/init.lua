@@ -16,7 +16,10 @@ require('code_runner').setup({
   filetype = {
 		java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
 		python = "python3 -u",
-		rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
+		--rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
+		rust = "cd $dir && cr",
 		c = "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt && rm $dir/$fileNameWithoutExt"
 	},
 })
+
+require('colorizer').setup()

@@ -13,7 +13,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
--- opt.termguicolors = true         -- bool: If term supports ui color then enable
+opt.termguicolors = true         -- bool: If term supports ui color then enable
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns

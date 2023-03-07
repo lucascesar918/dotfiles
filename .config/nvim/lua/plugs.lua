@@ -15,6 +15,10 @@ return require('packer').startup(function(use)
 		run = 'nvim-lua/plenary.nvim'
 	}
 
+	use {
+		'norcalli/nvim-colorizer.lua'
+	}
+
 	end,
 {
   config = {
