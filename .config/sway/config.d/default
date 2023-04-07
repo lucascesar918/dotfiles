@@ -209,8 +209,8 @@ bindsym $mod+r mode "resize"
 #
 # Backlight
 #
-    bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
-    bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +1%
+    bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 1%-
 #
 # App shortcuts
 #
