@@ -1,25 +1,24 @@
--- LEADER
-vim.g.mapleader = ","
-vim.g.localleader = "\\"
+require "core"
 
--- IMPORTS
-require('vars')      -- Variables
-require('opts')      -- Options
-require('keys')      -- Keymaps
-require('plugs')      -- Plugins
+local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
 
--- PLUGINS
-require('nvim-tree').setup{}
+local opt = vim.opt
+opt.signcolumn = "no"
 
-require('code_runner').setup({
-  -- put here the commands by filetype
-  filetype = {
-		java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-		python = "python3 -u",
-		--rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
-		rust = "cd $dir && cr",
-		c = "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt && rm $dir/$fileNameWithoutExt"
-	},
-})
+if custom_init_path then
+  dofile(custom_init_path)
+end
 
-require('colorizer').setup()
+require("core.utils").load_mappings()
+
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+
+-- bootstrap lazy.nvim!
+if not vim.loop.fs_stat(lazypath) then
+  require("core.bootstrap").gen_chadrc_template()
+  require("core.bootstrap").lazy(lazypath)
+end
+
+dofile(vim.g.base46_cache .. "defaults")
+vim.opt.rtp:prepend(lazypath)
+require "plugins"

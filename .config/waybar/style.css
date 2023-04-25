@@ -1,9 +1,10 @@
 * {
 	border: none;
 	border-radius: 10px;
-    font-family: "JetbrainsMono Nerd Font" ;
+  font-family: "NotoSans", "FontAwesome6Free", "SymbolsNerdFont" ;
 	font-size: 15px;
 	min-height: 10px;
+  padding-bottom: 1px;
 }
 
 window#waybar {
