@@ -10,9 +10,9 @@
                "tooltip": false,
                "scroll-step": 1,
                "format": " {icon} {volume}%",
-               "format-muted": " 婢 {volume}%",
+               "format-muted": " 󰖁 {volume}%",
                "format-icons": {
-                "default": ["奄", "奔", "墳"]
+                "default": ["󰕿", "󰖀", "󰕾"]
               },
               "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle"
 	},
@@ -35,7 +35,7 @@
 				"1": "",
 				"2": "",
 				"3": "",
-				"4": "",
+				"4": "󰎈",
 			}
 		},
 
@@ -47,8 +47,8 @@
                 "format-alt-click": "click-right",
                 "format-icons": {
                   "wifi": [""],
-                  "ethernet": [""],
-                  "disconnected": ["睊"],
+                  "ethernet": ["󰈀"],
+                  "disconnected": ["󰖪"],
                 },
                 "on-click": "xfce4-terminal -e nmtui",
 	},
@@ -57,7 +57,7 @@
         "align": 0,
         "rotate": 0,
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", ""],
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",
         "on-scroll-up": "brightnessctl -c backlight set 1%-",
         "on-scroll-down": "brightnessctl -c backlight set +1%",
@@ -81,7 +81,7 @@
 	},
     "clock": {
         "format": "{: %H:%M }",
-		"format-alt": "{: %H:%M   %d/%m/%Y}"
+		"format-alt": "{: %H:%M   %d/%m/%Y}"
     },
     "cpu": {
         "interval": 15,
@@ -100,7 +100,7 @@
         "max-length": 20,
         "format-icons": {
             "spotify": " ",
-            "default": " "
+            "default": "󰎈 "
         },
         "escape": true,
         "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",

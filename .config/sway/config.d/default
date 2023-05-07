@@ -214,8 +214,8 @@ bindsym $mod+r mode "resize"
 #
 # App shortcuts
 #
-    bindsym $mod+n exec $term-float ranger 
-    bindsym $mod+F2 exec brave
+    bindsym $mod+n exec $term-float xplr
+    bindsym $mod+F2 exec brave-beta
     bindsym $mod+apostrophe exec emacsclient -nc
 #
 # Screenshots
@@ -226,3 +226,8 @@ bindsym $mod+r mode "resize"
 # Keybindings List
 #
     bindsym $mod+t exec xed ~/.config/sway/cheatsheet
+
+#
+# Hide Waybar
+#
+    bindsym $mod+o exec ~/.config/sway/scripts/hide_waybar.sh
