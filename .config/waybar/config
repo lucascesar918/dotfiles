@@ -107,7 +107,7 @@
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
-        "format": " ",
+        "format": "",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "on-click-right": "killall wofi"
     },

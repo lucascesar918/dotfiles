@@ -216,7 +216,7 @@ bindsym $mod+r mode "resize"
 #
     bindsym $mod+n exec $term-float xplr
     bindsym $mod+F2 exec brave-beta
-    bindsym $mod+apostrophe exec emacsclient -nc
+    # bindsym $mod+apostrophe exec emacsclient -nc
 #
 # Screenshots
 #
