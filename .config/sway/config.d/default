@@ -26,11 +26,11 @@ set $menu wofi -c ~/.config/wofi/config -I
 set $powermenu ~/.config/waybar/scripts/power-menu.sh
 
 ### Idle configuration
-exec swayidle -w\
-    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
-    timeout 770 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -C ~/.config/swaylock/config'
+#exec swayidle -w\
+#    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
+#    timeout 770 'swaymsg "output * dpms off"' \
+#    resume 'swaymsg "output * dpms on"' \
+#    before-sleep 'swaylock -C ~/.config/swaylock/config'
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -214,7 +214,7 @@ bindsym $mod+r mode "resize"
 #
 # App shortcuts
 #
-    bindsym $mod+n exec $term-float xplr
+    bindsym $mod+n exec thunar
     bindsym $mod+F2 exec brave-beta
     # bindsym $mod+apostrophe exec emacsclient -nc
 #
