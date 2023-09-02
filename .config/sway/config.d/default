@@ -215,7 +215,7 @@ bindsym $mod+r mode "resize"
 # App shortcuts
 #
     bindsym $mod+n exec $term-float ranger 
-    bindsym $mod+F2 exec brave
+    bindsym $mod+F2 exec brave-browser
     bindsym $mod+apostrophe exec emacsclient -nc
 #
 # Screenshots
