@@ -19,7 +19,7 @@ return require("packer").startup(function(use)
     use("EdenEast/nightfox.nvim")
     use("nyoom-engineering/oxocarbon.nvim")
 
-    -- Statusline
+    -- Status line
     use({
         "nvim-lualine/lualine.nvim",
         event = "BufEnter",
@@ -73,12 +73,6 @@ return require("packer").startup(function(use)
             require("configs.cmp")
         end,
     })
-
-    use("hrsh7th/cmp-nvim-lsp")
-
-    use({ "hrsh7th/cmp-path", after = "nvim-cmp" })
-
-    use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
 
     -- LSP diagnostics, code actions, and more via Lua.
     use({
@@ -161,7 +155,6 @@ return require("packer").startup(function(use)
         "xiyaowong/nvim-transparent",
         config = function()
             require("transparent").setup({
-                enable = true,
                 extra_groups = {
                     "BufferLineTabClose",
                     "BufferlineBufferSelected",
@@ -170,7 +163,7 @@ return require("packer").startup(function(use)
                     "BufferLineSeparator",
                     "BufferLineIndicatorSelected",
                 },
-                exclude = {},
+                exclude_groups = {},
             })
         end,
     })
