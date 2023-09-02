@@ -10,9 +10,9 @@
                "tooltip": false,
                "scroll-step": 1,
                "format": " {icon} {volume}%",
-               "format-muted": " 婢 {volume}%",
+               "format-muted": " 󰝟 {volume}%",
                "format-icons": {
-                "default": ["奄", "奔", "墳"]
+                "default": ["󰕿", "󰖀", "󰕾"]
               },
               "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle"
 	},
@@ -47,8 +47,8 @@
                 "format-alt-click": "click-right",
                 "format-icons": {
                   "wifi": [""],
-                  "ethernet": [""],
-                  "disconnected": ["睊"],
+                  "ethernet": ["󰈀"],
+                  "disconnected": ["󰖪"],
                 },
                 "on-click": "xfce4-terminal -e nmtui",
 	},
@@ -81,7 +81,7 @@
 	},
     "clock": {
         "format": "{: %H:%M }",
-		"format-alt": "{: %H:%M   %d/%m/%Y}"
+		"format-alt": "{: %H:%M   %d/%m/%Y}"
     },
     "cpu": {
         "interval": 15,
