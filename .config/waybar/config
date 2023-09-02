@@ -35,7 +35,7 @@
 				"1": "",
 				"2": "",
 				"3": "",
-				"4": "",
+				"4": "󰎈",
 			}
 		},
 
@@ -57,7 +57,7 @@
         "align": 0,
         "rotate": 0,
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", ""],
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",
         "on-scroll-up": "brightnessctl -c backlight set 1%-",
         "on-scroll-down": "brightnessctl -c backlight set +1%",
@@ -107,7 +107,7 @@
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
-        "format": "",
+        "format": "",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "on-click-right": "killall wofi"
     },

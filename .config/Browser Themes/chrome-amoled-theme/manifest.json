@@ -1,0 +1,101 @@
+{
+	"manifest_version": 2,
+	"name": "AMOLED Theme",
+	"description": "Theme made for vampires like me.",
+	"version": "1.0",
+	"author": "github.com/lucascesar918",
+	"theme": {
+		"colors": {
+			"frame": [
+				0,
+				0,
+				0
+			],
+			"frame_inactive": [
+				0,
+				0,
+				0
+			],
+			"frame_incognito": [
+				0,
+				0,
+				0
+			],
+			"frame_incognito_inactive": [
+				0,
+				0,
+				0
+			],
+			"background_tab": [
+				0,
+				0,
+				0
+			],
+			"background_tab_inactive": [
+				0,
+				0,
+				0
+			],
+			"background_tab_incognito": [
+				0,
+				0,
+				0
+			],
+			"background_tab_incognito_inactive": [
+				0,
+				0,
+				0
+			],
+			"bookmark_text": [
+				32,
+				32,
+				32
+			],
+			"tab_background_text": [
+				189,
+				189,
+				189
+			],
+			"tab_background_text_inactive": [
+				143,
+				143,
+				143
+			],
+			"tab_background_text_incognito": [
+				189,
+				193,
+				198
+			],
+			"tab_background_text_incognito_inactive": [
+				167,
+				171,
+				174
+			],
+			"tab_text": [
+				191,
+				191,
+				191
+			],
+			"toolbar": [
+				0,
+				0,
+				0
+			],
+			"toolbar_button_icon": [
+				255,
+				255,
+				255
+			],
+			"omnibox_text": [
+				185,
+				185,
+				185
+			],
+			"omnibox_background": [
+				0,
+				0,
+				0
+			]
+		}
+	}
+}
