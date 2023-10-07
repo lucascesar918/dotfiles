@@ -1,11 +1,7 @@
-/*
-Arc-Dark Color Scheme
-*/
-
-@define-color highlight #212121;
-@define-color base1  #40455;
-@define-color base2 #40455;
-@define-color base3  #0c0d0c;
+@define-color highlight #0a0a0a;
+@define-color base1  #000000;
+@define-color base2 #000000;
+@define-color base3  #000000;
 
 *{
     font-family: UbuntuMono;
