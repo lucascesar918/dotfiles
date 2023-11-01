@@ -59,8 +59,8 @@
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",
-        "on-scroll-up": "brightnessctl -c backlight set 1%-",
-        "on-scroll-down": "brightnessctl -c backlight set +1%",
+        "on-scroll-up": "brightnessctl -c backlight set +1%",
+        "on-scroll-down": "brightnessctl -c backlight set 1%-",
         "smooth-scrolling-threshold": 1,
 	},
     "battery": {
