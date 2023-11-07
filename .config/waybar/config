@@ -80,8 +80,8 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{: %H:%M }",
-		"format-alt": "{: %H:%M   %d/%m/%Y}"
+        "format": "{:  %H:%M }",
+		"format-alt": "{:  %H:%M    %d/%m/%Y}"
     },
     "cpu": {
         "interval": 15,
