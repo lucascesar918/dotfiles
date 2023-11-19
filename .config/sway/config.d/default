@@ -216,7 +216,7 @@ bindsym $mod+r mode "resize"
 # App shortcuts
 #
     bindsym $mod+n exec thunar
-    bindsym $mod+F2 exec brave-beta
+    bindsym $mod+F2 exec librewolf
     # bindsym $mod+apostrophe exec emacsclient -nc
 #
 # Screenshots
