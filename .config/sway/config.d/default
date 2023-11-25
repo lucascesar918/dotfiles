@@ -21,8 +21,8 @@ set $term-float kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu wofi -c ~/.config/wofi/config -I
-set $menu dmenu_run -nf '#DADADA' -nb '#000000' -sb '#DADADA' -sf '#000000' -fn 'monospace-10' -p 'dmenu prompt &gt;' -b
+set $menu wofi -c ~/.config/wofi/config -I
+# set $menu dmenu_run -nf '#DADADA' -nb '#000000' -sb '#DADADA' -sf '#000000' -fn 'monospace-10' -p 'dmenu prompt &gt;' -b
 
 set $powermenu ~/.config/waybar/scripts/power-menu.sh
 
@@ -53,7 +53,8 @@ set $powermenu ~/.config/waybar/scripts/power-menu.sh
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym Shift+Space exec $menu
+    # bindsym $mod+Shift+d exec $menu-secondary
 
     # Activities
     bindsym $mod+p exec ~/.config/wofi/windows.py
