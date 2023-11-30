@@ -14,7 +14,13 @@ require("keys")
 --   }
 -- })
 
+-- Oxocarbon theme
 vim.cmd("colorscheme oxocarbon")
+
+-- Tabsize
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 
 -- Neovim as LSP (null-ls)
 local null_ls = require("null-ls")
