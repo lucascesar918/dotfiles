@@ -34,7 +34,7 @@ bindsym $mod+p exec --no-startup-id /home/cesar/monitor_toggle.sh
 # they are included here as an example. Modify as you see fit.
 
 # Start caffeine-ng
-exec --no-startup-id caffeine 
+exec --no-startup-id caffeine
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -119,7 +119,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+# bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -133,7 +133,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+v focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
