@@ -14,6 +14,7 @@ set $term kitty
 set $browser flatpak run io.github.ungoogled_software.ungoogled_chromium
 set $files nemo
 set $lock /home/cesar/.config/scripts/lock
+set $wallpaper /home/cesar/Pictures/creationofadam.jpeg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -22,6 +23,9 @@ font pango:Source Code Pro 9
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
+
+# Set wallpaper
+exec feh --bg-fill $wallpaper
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -38,7 +42,10 @@ exec --no-startup-id caffeine
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- $lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- $lock --nofork
+
+# Start flameshot
+bindsym Print exec flameshot gui
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
